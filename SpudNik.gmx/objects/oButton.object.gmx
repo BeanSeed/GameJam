@@ -31,6 +31,8 @@ image_index = 0;
 color = c_black;
 //Change the text in the child object
 text = ""; 
+selectedIndex[0] = 0;
+selectedIndex[1] = 1;
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,7 @@ text = "";
             <kind>1</kind>
             <string>selected = false;
 color = c_black;
-image_index = 0;
+image_index = selectedIndex[1];
 </string>
           </argument>
         </arguments>
@@ -80,7 +82,7 @@ image_index = 0;
             <kind>1</kind>
             <string>selected = true;
 color = c_gray;
-image_index = 1;
+image_index = selectedIndex[0];
 </string>
           </argument>
         </arguments>

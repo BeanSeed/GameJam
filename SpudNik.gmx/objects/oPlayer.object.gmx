@@ -77,7 +77,7 @@ image_yscale = 1.5;
     break;
     
     case WIN:
-        reachGoal();
+        //reachGoal();
         //load next level
     break;
 }
@@ -156,7 +156,23 @@ image_yscale = 1.5;
         }
     }
     
-    image_angle = 180;
+    if (instance_number(oGirder) &gt; 0)
+    {
+        with (oGirder)
+        {
+            if (owner == PLAYER)
+            {
+                instance_destroy();
+            }
+        }
+    }
+    
+    with (owner)
+    {
+        event_user(1);
+    }
+    
+    image_angle = getStartDir();
     direction = image_angle;
     state = INIT;
 }

@@ -8,4 +8,11 @@
     opens the next room when the user makes it into the goal
 */
 
-room_goto(rmLevelSelect);
+owner.alarm[0] = room_speed*2.5;
+
+with (oGoal)
+{
+    instance_destroy();
+}
+
+instance_destroy();

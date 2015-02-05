@@ -7,21 +7,27 @@
     Sets up the level buttons with the appropriate numbers
 */
 
-var xdist, ydist, level;
+var xdist, ydist, level, rows, cols;
 
-xdist = room_width/11;
-ydist = room_height/11;
+rows = 5;
+cols = 6;
+
+xdist = room_width/(cols + 1);
+ydist = room_height/(rows + 1);
 
 
 
-for (var i = 1; i <= 10; i++)
+for (var i = 1; i <= cols; i++)
 {
-    for ( var j = 1; j <= 10; j++)
+    for ( var j = 1; j <= rows; j++)
     {
         level = instance_create(i*xdist,j*ydist,oLevelButton);
         
-        level.level = (i)+(j-1)*10;
+        level.level = (i)+(j-1)*cols;
         level.text = string(level.level);
+        level.image_index = oControl.level[(level.level)-1];
+        level.selectedIndex[0] = image_index;
+        level.selectedIndex[1] = image_index;
         
     }
 }

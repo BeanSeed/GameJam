@@ -24,13 +24,14 @@
       <sprite>sprites\sSpawnPoint</sprite>
     </sprites>
     <sprites name="Obstacles">
-      <sprite>sprites\sAstroid</sprite>
+      <sprite>sprites\sAsteroid</sprite>
       <sprite>sprites\sGirder</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\sLevelButton</sprite>
       <sprite>sprites\sButton</sprite>
-      <sprite>sprites\sprite6</sprite>
+      <sprite>sprites\sTitle</sprite>
+      <sprite>sprites\sToolButtons</sprite>
     </sprites>
     <sprite>sprites\sGameTitle</sprite>
     <sprite>sprites\sToolbar</sprite>
@@ -42,19 +43,31 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\getStartDir.gml</script>
-    <script>scripts\playerMove.gml</script>
-    <script>scripts\reachGoal.gml</script>
-    <script>scripts\initLevelMenu.gml</script>
-    <script>scripts\getSpeed.gml</script>
-    <script>scripts\createPlayer.gml</script>
-    <script>scripts\createGoal.gml</script>
     <script>scripts\distance_to_Object.gml</script>
     <script>scripts\createParticleSys.gml</script>
     <script>scripts\createCommetSys.gml</script>
+    <scripts name="Player">
+      <script>scripts\reachGoal.gml</script>
+      <script>scripts\getSpeed.gml</script>
+      <script>scripts\playerMove.gml</script>
+      <script>scripts\getStartDir.gml</script>
+    </scripts>
+    <scripts name="Control">
+      <script>scripts\completeLevel.gml</script>
+      <script>scripts\createGoal.gml</script>
+      <script>scripts\initLevelMenu.gml</script>
+      <script>scripts\createPlayer.gml</script>
+      <script>scripts\getTools.gml</script>
+    </scripts>
+    <script>scripts\createObjectButton.gml</script>
+    <scripts name="Game">
+      <script>scripts\saveGame.gml</script>
+      <script>scripts\loadGame.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fontButton</font>
+    <font>fonts\fontButtonBig</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
@@ -87,6 +100,9 @@
       <object>objects\oToolPull</object>
       <object>objects\oToolGirder</object>
       <object>objects\oToolStart</object>
+      <object>objects\parToolButton</object>
+      <object>objects\oToolButtonRemove</object>
+      <object>objects\oToolButtonRotate</object>
     </objects>
     <objects name="Doodads">
       <object>objects\oCommet</object>
@@ -99,6 +115,33 @@
       <room>rooms\rmLevel001</room>
       <room>rooms\rmLevel002</room>
       <room>rooms\rmLevel003</room>
+      <room>rooms\rmLevel004</room>
+      <room>rooms\rmLevel005</room>
+      <room>rooms\rmLevel006</room>
+      <room>rooms\rmLevel007</room>
+      <room>rooms\rmLevel008</room>
+      <room>rooms\rmLevel009</room>
+      <room>rooms\rmLevel010</room>
+      <room>rooms\rmLevel011</room>
+      <room>rooms\rmLevel012</room>
+      <room>rooms\rmLevel013</room>
+      <room>rooms\rmLevel014</room>
+      <room>rooms\rmLevel015</room>
+      <room>rooms\rmLevel016</room>
+      <room>rooms\rmLevel017</room>
+      <room>rooms\rmLevel018</room>
+      <room>rooms\rmLevel019</room>
+      <room>rooms\rmLevel020</room>
+      <room>rooms\rmLevel021</room>
+      <room>rooms\rmLevel022</room>
+      <room>rooms\rmLevel023</room>
+      <room>rooms\rmLevel024</room>
+      <room>rooms\rmLevel025</room>
+      <room>rooms\rmLevel026</room>
+      <room>rooms\rmLevel027</room>
+      <room>rooms\rmLevel028</room>
+      <room>rooms\rmLevel029</room>
+      <room>rooms\rmLevel030</room>
     </rooms>
   </rooms>
   <constants number="11">

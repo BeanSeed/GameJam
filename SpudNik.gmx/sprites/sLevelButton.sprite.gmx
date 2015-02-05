@@ -21,5 +21,7 @@
   <height>64</height>
   <frames>
     <frame index="0">images\sLevelButton_0.png</frame>
+    <frame index="1">images\sLevelButton_1.png</frame>
+    <frame index="2">images\sLevelButton_2.png</frame>
   </frames>
 </sprite>

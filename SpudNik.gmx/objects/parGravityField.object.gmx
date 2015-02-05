@@ -48,6 +48,58 @@ varRadius = radius;
 
 owner = NOONE;
 state = ACTIVATE;
+
+toolbutton = noone;
+
+button[0] = noone;
+button[1] = noone;
+button[2] = noone;
+button[3] = noone;
+button[4] = noone;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>for (var j = 0; j &lt; 5; j++)
+{
+    if (instance_exists(button[j]))
+    {
+        with (button[j])
+        {
+            instance_destroy();
+        }
+    }
+}
+
+if (instance_exists(toolbutton))
+{
+    with (toolbutton)
+    {
+        if (count &lt; maxcount)
+        {
+            count++;
+        }
+    }
+    
+}
 </string>
           </argument>
         </arguments>

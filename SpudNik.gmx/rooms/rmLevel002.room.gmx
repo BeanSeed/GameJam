@@ -52,9 +52,9 @@
   </views>
   <instances>
     <instance objName="oAsteroid" x="320" y="160" name="inst_11E850AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayerRegion" x="128" y="224" name="inst_7734A558" locked="0" code="" scaleX="4" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="oGoal" x="896" y="448" name="inst_0F97DB26" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="oAsteroid" x="704" y="608" name="inst_B90556EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oGoal" x="800" y="384" name="inst_0F97DB26" locked="0" code="" scaleX="5" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayerRegion" x="128" y="224" name="inst_77676200" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

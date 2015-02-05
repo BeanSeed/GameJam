@@ -19,4 +19,5 @@ if (instance_exists(region))
     
     player.xstart = startX;
     player.ystart = startY;
+    player.owner = id;
 }
